@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hostel Landing Page</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-content-div">
+                <a href="#home-sec">
+                    <img
+                        src="data:image/png;base64,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"
+                        alt="Hostel Logo"
+                        id="header-img" /></a>
+                <nav id="nav-bar">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#facilities" class="nav-link">FACILITIES</a>
+                    <a href="#our-facilities" class="nav-link">OUR FACILITIES</a>
+                   
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="home-sec" class="flexible home-sec">
+                <div class="eye-grabber-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsp9FUVMjDBoUb0og42lOx0aPuTwaTrVZ8Ng&usqp=CAU"
+                        alt="Image available" />
+                </div>
+                <div class="eye-grabber">
+                    <h1>Safe, Secure, Comfortable.</h1>
+                    <h2>
+                        Providing Hostel with home like facilities in Near BBD University and City Law College since 2017.<br>
+                        <b> The
+                        Star Boys Hostel</b> 
+                    </h2>
+                    <button class="btn"
+                        onclick="window.location.href = '#contact';">
+                        Book Now
+                    </button>
+                </div>
+            </section>
+            <section id="about" class="sec-padding">
+                <h3 class="section-heading">ABOUT US</h3>
+                <div class="sec-content-div flexible">
+                    <p>
+                        We understand that college is not just about classes; it's
+                        about experiences, friendships, and growth. That's why
+                        we've created a unique hostel designed exclusively for
+                        college students like you, providing a comfortable and
+                        supportive environment.
+
+                        Conveniently located within 500m from BBD University And
+                        City Law College, Star Boys Hostel offers the best of
+                        both worlds – easy access to campus facilities and the
+                        freedom to explore the surrounding city. You'll find
+                        everything you need within reach, from restaurants and
+                        shops to recreational spots and cultural attractions.
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWRMyRXA7FANFTa0KWVmAOBFG__O9RI9sjuw&usqp=CAU"
+                        alt="Image not found 404" />
+                </div>
+            </section>
+            <section id="varieties" class="sec-padding">
+                <h3 class="section-heading">Facilities</h3>
+                <div class="sec-content-div flexible">
+                    <div class="tile">
+                        <img
+                            src="data:image/png;base64,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"
+                            alt="CCTV logo" />
+                        <h4>24*7 Surveillance</h4>
+                        <p>
+                            Your safety is our top priority. Our hostel features
+                            24/7 security, CCTV surveillance
+                        </p>
+                    </div>
+                    <div class="tile">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRMmf20C9k1WDof7K2Fc1pgZu9d6l4DgTZw&usqp=CAU"
+                            alt="24*7 logo" />
+                        <h4>Light & Water</h4>
+                        <p>
+                            We Provide 24*7 Light and Water Supply with Gyser and Water Cooler Facilty.
+                            In case of light break down we have Generator.
+                        </p>
+                    </div>
+                    <div class="tile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5BgjshcUB36mMF5NoTIpfoN1EkVnlrtizkw&usqp=CAU"
+                            alt="Food logo" />
+                        <h4>Food</h4>
+                        <p>
+                           We have Our Personal Mess in which we provide Fresh & Quality food with 7 days different menu for each seven days.
+                        </p>
+                    </div>
+                    <div class="tile">
+                        <img src="data:image/png;base64,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"
+                            alt="AC logo" />
+                        <h4>AC Mess</h4>
+                        <p>
+                           Our Mess is Fully Air Conditioner facility where student can come sit eat food.
+                        </p>
+                    </div>
+                    <div class="tile">
+                        <img src="data:image/png;base64,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"
+                            alt="meal logo" />
+                        <h4>4 Time Meal</h4>
+                        <p>
+                           We Provide 4 times meals a day having breakfast in morining, Lunch in afternoon, Snack in the eve and Dinner at Night.
+                        </p>
+                    </div>
+                    <div class="tile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCgT0ADbemNrtyCXjzvEaR8FyHsQQLV7uDmg&usqp=CAU"
+                            alt="parking logo" />
+                        <h4>Parking Facility</h4>
+                        <p>
+                            We have our own Parking facilityfor bike and bicycle with 24*7 CCTV Surveillance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="our-service" class="sec-padding">
+                <h3 class="section-heading">OUR FACILITIES</h3>
+                <div class="sec-content-div">
+                    <div class="bars">
+                        <div class="icon-container">
+                            <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="image not loaded error 404" />
+                        </div>
+                        <div class="txt-container">
+                            <h5>Fresh Food</h5>
+                            <p>We Provide fresh and hygienic food</p>
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="icon-container">
+                            <img src="https://i.ibb.co/FKNq4Qr/delivered.png"
+                                alt="image not loaded error 404" />
+                        </div>
+                        <div class="txt-container">
+                            <h5>Safety & Security</h5>
+                            <p>
+                                We Provide Safety and Security with 24*7 CCTV surveillance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="icon-container">
+                            <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="image not loaded error 404" />
+                        </div>
+                        <div class="txt-container">
+                            <h5>Comfortable</h5>
+                            <p>
+                                We guarantee 100% comfort satisfaction. We do
+                                our best to make
+                                your child comfort experience smooth. But if we mess
+                                up somehow you
+                                will get compensated for every inconvenience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            -->
+            <section class="sec-padding" id="contact">
+                <h3 class="section-heading">CONTACT</h3>
+                <div class="sec-content-div flexible">
+                    <h6>To make a booking or just to know more contact us :</h6>
+                   
+                    <p>Phone.No : +91******** <br>
+                    Email : xyz@gmail.com <br>
+                     Address : Star Boys Hostel, Near City LAw College In Front of  BBD UNiversity UttarDhona, Faizabad Road Lucknow (Uttar Pradesh) </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Created by
+            <a href="#">Arpit Yadav</a>
+        </footer>
+    </body>
+</html>
